@@ -8,17 +8,17 @@ const Login = (props: Props) => {
   const [passValid, setPassValid] = useState(true)
 
 
-  const emailHandler = (e) => {
+  const emailHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value)
    
   }
-  const passwordHandler = (e) => {
+  const passwordHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(e.target.value)
     setPassValid(true)
 
   }
 
-  const formHandler = (e) => {
+  const formHandler = (e: React.ChangeEvent<HTMLFormElement>) => {
     e.preventDefault()
  
     if(password.length <= 5){
@@ -27,8 +27,6 @@ const Login = (props: Props) => {
     }
 
     setPassValid(true)
-    console.log(email);
-    console.log(password);
     setEmail('')
     setPassword('')
     

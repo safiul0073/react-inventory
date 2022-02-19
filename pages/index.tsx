@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import App from '../components/layouts/app'
+import App from '../components/layouts/App'
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
